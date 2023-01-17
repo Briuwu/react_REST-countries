@@ -8,10 +8,10 @@ const Country = ({ country }) => {
   return (
     <motion.div
       className="country"
+      whileHover={{ scale: 1.05 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
     >
       <Link to={`/country/${countryName}`}>
         <img className="country__flag" src={country.flags.svg} alt="" />
