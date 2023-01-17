@@ -45,9 +45,11 @@ I learned quite a few different things on this project, mainly on how to create 
 
 I also learned about optional chaining, this (?.) operator returns an undefined if the function or object is undefined or null, instead of throwing an error. Which is really helpful for this part!
 
-```let borders = data.filter((each) => {
+```
+let borders = data.filter((each) => {
       return item?.includes(each.cca3);
-    });```
+    });
+```
 
 ## Author
 
