@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 :root {
   --element: hsl(0, 0%, 100%);
   --background: hsl(0, 0%, 98%);
@@ -105,18 +104,6 @@ h6 {
     scroll-behavior: auto !important;
   }
 }
-:root {
-  --element: hsl(0, 0%, 100%);
-  --background: hsl(0, 0%, 98%);
-  --input: hsl(0, 0%, 52%);
-  --text: hsl(200, 15%, 8%);
-}
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
-}
-
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -145,7 +132,7 @@ ul {
 }
 
 .container {
-  padding-inline: 1em;
+  padding-inline: clamp(1rem, 5vw, 3rem);
   max-width: 1440px;
   margin-inline: auto;
 }

@@ -1,6 +1,7 @@
 // hide the elements and make screen-reader only
 // read the content of the element
-@use "../utils/variables" as var;
+@use "../Utils/variables" as var;
+@use "../Utils/function" as func;
 
 .visually-hidden {
   border: 0;
@@ -30,7 +31,7 @@ ul {
 }
 
 .container {
-  padding-inline: 1em;
+  padding-inline: func.fluid(16, 5vw, 48);
   max-width: 1440px;
   margin-inline: auto;
 }
