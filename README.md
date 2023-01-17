@@ -43,6 +43,12 @@ I started this project, to practice my react and designing skills. First, I crea
 
 I learned quite a few different things on this project, mainly on how to create a context, and how to manipulate different arrays to display elements.
 
+I also learned about optional chaining, this (?.) operator returns an undefined if the function or object is undefined or null, instead of throwing an error. Which is really helpful for this part!
+
+```let borders = data.filter((each) => {
+      return item?.includes(each.cca3);
+    });```
+
 ## Author
 
 - Frontend Mentor - [@Briuwu](https://www.frontendmentor.io/profile/Briuwu)
