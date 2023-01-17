@@ -24,12 +24,12 @@ const Filter = () => {
 
   return (
     <div className="filter__wrapper">
-      <button onClick={handleClick} className="filter btn">
+      <div onClick={handleClick} className="filter btn">
         <p className="filter__select">
           {region !== "All" ? region : "Filter by Region"}
           <i className="arrow down"></i>
         </p>
-      </button>
+      </div>
       <div className={`filter__opt ${isActive ? "active" : ""}`}>
         {regionSelection.map((each) => (
           <button onClick={() => handleRegion(each)} className="btn" key={each}>

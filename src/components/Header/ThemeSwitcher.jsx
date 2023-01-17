@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
   return (
     <div className="theme btn" onClick={themeHandler}>
       <div className="theme__icon">
-        <img loading="lazy" src={isDarkMode ? SunImg : MoonImg} alt="" />
+        <img src={isDarkMode ? SunImg : MoonImg} alt="" />
       </div>
       <p>{isDarkMode ? "Light Mode" : "Dark Mode"}</p>
     </div>
