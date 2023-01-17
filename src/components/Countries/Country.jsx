@@ -14,12 +14,7 @@ const Country = ({ country }) => {
       transition={{ duration: 0.5 }}
     >
       <Link to={`/country/${countryName}`}>
-        <img
-          loading="lazy"
-          className="country__flag"
-          src={country.flags.svg}
-          alt=""
-        />
+        <img className="country__flag" src={country.flags.svg} alt="" />
         <div className="country__info">
           <h2 className="country__name">{country.name.common}</h2>
           <p className="country__details">

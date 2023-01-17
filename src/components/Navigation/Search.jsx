@@ -7,9 +7,9 @@ const Search = () => {
 
   return (
     <div className="search">
-      <button className="search__icon btn">
+      <div className="search__icon btn">
         <img src={searchIcon} alt="" />
-      </button>
+      </div>
       <input
         value={search}
         onChange={handleChange}
