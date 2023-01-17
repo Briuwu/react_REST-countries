@@ -1,0 +1,64 @@
+@use "../Utils/function" as func;
+@use "../Utils/variables" as var;
+
+body {
+  background-color: var(--background);
+  transition: var.$transition;
+}
+
+.home {
+  margin-block: 2em;
+}
+
+.countries {
+  margin-block: 3em;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, func.rem(264));
+  gap: func.fluid(16, 15vw, 64);
+}
+
+.country {
+  a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  position: relative;
+  z-index: 1;
+  background-color: var(--element);
+  box-shadow: var.$box-shadow;
+  border-radius: 0.3em;
+  overflow: hidden;
+  color: var(--text);
+
+  transition: var.$transition;
+
+  &__info {
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  &__details span {
+    font-weight: 600;
+    font-size: func.rem(14);
+  }
+
+  &__name {
+    font-size: func.rem(16);
+    margin-bottom: 0.5em;
+  }
+
+  &__flag {
+    height: 160px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .countries {
+    justify-content: space-between;
+  }
+}

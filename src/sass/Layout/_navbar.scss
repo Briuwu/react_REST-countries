@@ -1,0 +1,45 @@
+@use "../Utils/function" as func;
+@use "../Utils/variables" as var;
+
+.darkmode {
+  --element: hsl(209, 23%, 22%);
+  --background: hsl(207, 26%, 17%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(0, 0%, 100%);
+}
+
+.nav {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5em;
+  }
+  background-color: var(--element);
+  box-shadow: var.$box-shadow;
+
+  &__logo {
+    font-size: func.fluid(14, 1.5vw, 20);
+    color: var(--text);
+  }
+
+  transition: all 0.4s ease;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: func.rem(14);
+  cursor: pointer;
+
+  &__icon {
+    width: 16px;
+    transform: rotate(-20deg);
+  }
+
+  p {
+    color: var(--text);
+    font-weight: 600;
+  }
+}

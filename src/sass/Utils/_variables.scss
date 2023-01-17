@@ -1,0 +1,17 @@
+:root {
+  --element: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 98%);
+  --input: hsl(0, 0%, 52%);
+  --text: hsl(200, 15%, 8%);
+}
+
+$box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+$transition: all 0.4s ease;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+$ff: "Nunito Sans", sans-serif;
+
+body {
+  font-family: $ff;
+  font-size: 14px;
+}
