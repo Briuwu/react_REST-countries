@@ -42,6 +42,7 @@ const VisitedCountry = () => {
   const goBack = () => navigate(-1, { replace: true });
 
   return country.map((each) => {
+    console.log(each);
     return (
       <motion.section
         key={each.name.common}
@@ -72,7 +73,10 @@ const VisitedCountry = () => {
                 Sub Region: <span>{each.subregion}</span>
               </p>
               <p>
-                Capital: <span>{each.capital[0]}</span>
+                Capital:{" "}
+                <span>
+                  {each.capital ? each.capital.map((each) => each) : "N/A"}
+                </span>
               </p>
             </div>
             <div className="each">
@@ -81,7 +85,11 @@ const VisitedCountry = () => {
               </p>
               <p>
                 Currencies:{" "}
-                {<span>{Object.values(each.currencies)[0].name}</span>}
+                <span>
+                  {each.currencies
+                    ? Object.values(each.currencies)[0].name
+                    : "N/A"}
+                </span>
               </p>
               <p>
                 Languages: <span>{displayLanguages(each.languages)}</span>

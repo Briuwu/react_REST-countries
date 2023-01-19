@@ -27,7 +27,7 @@ const Country = ({ country }) => {
           </p>
           <p className="country__details">
             <span>Capital: </span>
-            {country.capital}
+            {country.capital ? country.capital : "N/A"}
           </p>
         </div>
       </Link>
