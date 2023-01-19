@@ -13,9 +13,7 @@ const Countries = () => {
     <AnimatePresence>
       <div className="countries">
         {renderCountries().map((country) => (
-          <LazyLoad key={country.name.common} threshold={0.5}>
-            <Country country={country} />
-          </LazyLoad>
+          <Country key={country.name.common} country={country} />
         ))}
       </div>
     </AnimatePresence>
