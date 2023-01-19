@@ -42,7 +42,6 @@ const VisitedCountry = () => {
   const goBack = () => navigate(-1, { replace: true });
 
   return country.map((each) => {
-    console.log(each);
     return (
       <motion.section
         key={each.name.common}
