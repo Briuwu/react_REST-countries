@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Countries from "../components/Countries/Countries";
 import Navigation from "../components/Navigation/Navigation";
 import { motion } from "framer-motion";
